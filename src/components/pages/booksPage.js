@@ -12,6 +12,12 @@ export class BooksPage extends Component {
         error: false
     }
 
+    onItemSelected = (id) => {
+        this.setState({
+            selectedBook: id
+        })
+    }
+
     componentDidCatch() {
         this.setState({
             error: true
@@ -22,7 +28,6 @@ export class BooksPage extends Component {
         if (this.state.error) {
             return <ErrorMessage/>
         }
-
         return (
             <ItemList 
             onItemSelected={(itemId) => {

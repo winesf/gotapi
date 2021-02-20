@@ -16,6 +16,7 @@ export default class GotService {
 
     getAllBooks = async () => {
       const res = await this.getResource(`/books/`);
+      console.log(res);
       return res.map(this._transformBook);
     }
 
@@ -26,7 +27,8 @@ export default class GotService {
 
    getAllCharacters = async () => {
         const res = await this.getResource(`/characters?page=5&pageSize=10`);
-        return res.map(this._transformCharacter)
+     // console.log(res);
+     return res.map(this._transformCharacter)
     }
 
     getCharacter = async (id) => {
@@ -36,6 +38,7 @@ export default class GotService {
 
     getAllHouses = async () => {
         const res = await this.getResource(`/houses/`)
+      // console.log(res);
         return res.map(this._transformHouse);
     }
 

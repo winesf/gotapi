@@ -22,8 +22,11 @@ const HeaderLinks = styled.ul`
     color: #fff;
     list-style-type: none;
     li {
-        margin-right: 20px;
+        margin-right: 15px;
         font-size: 18px;
+        border: 1px solid white;
+        padding: 3px 5px;
+        border-radius: 12%;
     }
 `;
 

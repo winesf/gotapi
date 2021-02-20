@@ -12,3 +12,6 @@
 .toggle-btn:focus {
     outline: none;
 }
+body {
+    background-color: #1b1f30 !important;
+}
